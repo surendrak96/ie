@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback </title>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script> 
+$(function(){
+  $("#header").load("header.html"); 
+  $("#footer").load("footer.html"); 
+});
+</script> 
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link href="css/jquery.uls.css" rel="stylesheet"/>
+<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="js/jquery.uls.data.js"></script>
+<script src="js/jquery.uls.data.utils.js"></script>
+<script src="js/jquery.uls.lcd.js"></script>
+<script src="js/jquery.uls.languagefilter.js"></script>
+<script src="js/jquery.uls.regionfilter.js"></script>
+<script src="js/jquery.uls.core.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <script src="js/easyResponsiveTabs.js"></script>
+
+<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><span>ie</span>lanat</a>
+			</div>
+			<div class="header-right">
+			<a class="account" href="login.html">My Account</a>
+			
+	<!-- Large modal -->
+			<div class="selectregion">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Select Your Region</button>
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+					aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										&times;</button>
+									<h4 class="modal-title" id="myModalLabel">
+										Please Choose Your Location</h4>
+								</div>
+								</div>
+								<div class="modal-body">
+									 <form class="form-horizontal" role="form">
+										<div class="form-group">
+											<select id="basic2" class="show-tick form-control" multiple>
+												<optgroup label="Popular Cities">
+													<option selected style="display:none;color:#eee;">Select City</option>
+													<option>Dubai</option>
+													<option>Abu Dhabi</option>
+													<option>Sharjah</option>
+													<option>Ras Al Khaimah	 	 </option>
+													<option>Fujairah</option>
+													<option>Ajman</option>
+													<option>Umm Al Quwain</option>
+												</optgroup>
+											</optgroup>
+											</select>
+										</div>
+									  </form>    
+								</div>
+							</div>
+						</div>
+					</div>
+				<script>
+				$('#myModal').modal('');
+				</script>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+	</div>
+	<div class="banner text-center">
+	  <div class="container">    
+			<h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with ielanat</h1>
+			<p></p>
+			<a href="post-ad.html">Post Free Ad</a>
+	  </div></div>
+
+	
+	<div class="contact main-grid-border">
+		<div class="container">
+			<h2 class="head text-center">Contact Us</h2>
+			<section id="hire">    
+				<form action="contact.php" method="GET" id="filldetails">
+					  <div class="field name-box">
+							<input type="text" name="name" id="name" placeholder="Who Are You?"/>
+							<label for="name">Name</label>
+							<span class="ss-icon">check</span>
+					  </div>
+					  
+					  <div class="field email-box">
+							<input type="text" name="email" id="email" placeholder="example@email.com"/>
+							<label for="email">Email</label>
+							<span class="ss-icon">check</span>
+					  </div>
+					  
+					  <div class="field ad-ID">
+							<input name="adid" type="text" id="email" placeholder="Ad ID"/>
+							<label for="email">Ad ID</label>
+							<span class="ss-icon">check</span>
+					  </div>
+					  
+					  <div class="field phonenum-box">
+							<input name="phone" type="text" id="email" placeholder="Phone Number"/>
+							<label for="email">Phone</label>
+							<span class="ss-icon">check</span>
+					  </div>
+
+					  <div class="field msg-box">
+							<textarea name="message" id="msg" rows="4" placeholder="Your message goes here..."/></textarea>
+							<label for="msg">Your Msg</label>
+							<span class="ss-icon">check</span>
+					  </div>
+					  <div class="submit">
+						<input class="button" type="submit" value="Send" />
+		
+
+					  </div>
+		  </form>
+			<!-- <div class="upload">
+						 <h3 class="tlt">Add Attachment:</h3>
+						<form id="upload" method="post" action="upload.php" enctype="multipart/form-data">   
+			<div id="drop">
+				<a>Choose file</a>
+				<input type="file" name="upl" multiple />
+			</div>
+-->
+			<ul class="show">
+				<!-- The file uploads will be shown here -->
+			</ul>
+		<!--</form>	
+		<div class="clear"></div>
+		<form class="submit">
+		<input class="button" type="submit" value="Send" />
+		</form> -->
+		<!-- JavaScript Includes -->
+		<script src="js/jquery.knob.js"></script>
+
+		<!-- jQuery File Upload Dependencies -->
+		<script src="js/jquery.ui.widget.js"></script>
+		<script src="js/jquery.fileupload.js"></script>
+		
+		<!-- Our main JS file -->
+		<script src="js/script.js"></script>
+						</div>
+			</section>
+			<script>
+				  $('textarea').blur(function () {
+				$('#hire textarea').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('textarea + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('textarea + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:first-child input').blur(function () {
+				$('#hire .field:first-child input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:first-child input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:first-child input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:nth-child(2) input').blur(function () {
+				$('#hire .field:nth-child(2) input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:nth-child(2) input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:nth-child(2) input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:nth-child(3) input').blur(function () {
+				$('#hire .field:nth-child(3) input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:nth-child(3) input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:nth-child(3) input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+			$('#hire .field:nth-child(4) input').blur(function () {
+				$('#hire .field:nth-child(4) input').each(function () {
+					$this = $(this);
+					if (this.value != '') {
+						$this.addClass('focused');
+						$('.field:nth-child(4) input + label + span').css({ 'opacity': 1 });
+					} else {
+						$this.removeClass('focused');
+						$('.field:nth-child(4) input + label + span').css({ 'opacity': 0 });
+					}
+				});
+			});
+		  //@ sourceURL=pen.js
+		</script>    
+		<script>
+	  if (document.location.search.match(/type=embed/gi)) {
+		window.parent.postMessage("resize", "*");
+	  }
+	</script>
+		</div>	
+	</div>
+	
+<div id="footer"></div>
+</body>
+</html>
