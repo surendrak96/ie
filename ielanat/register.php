@@ -76,9 +76,90 @@ if(isset($_POST['submit'])){
 				$name = $_POST['name'];
 			$to = $_POST['email'];
 			$subject = "Registration Confirmation";
-			$body = "<p>Thank you  ".$name. " for registering at Ielanat.</p>
-			<p>To activate your account, please click on this link: <a href='".DIR."activate.php?x=$id&y=$activasion'>".DIR."activate.php?x=$id&y=$activasion</a></p>
-			<p>Regards ielanat team</p>";
+			$body ='
+     
+<html><body style="width:100%; margin:0; padding:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; background-color:#ffffff;">
+       <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" style="height:auto !important; margin:0; padding:25px; background-color:#ccc; color:#333333;"> <tr>
+               <td>
+<div id="tablewrap" style="width:100% !important; max-width:740px !important; text-align:center; margin:0 auto;">
+                       <table id="contenttable" width="740" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; margin:0 auto; text-align:center; border:none; width: 100% !important; max-width:740px !important;">
+                           <tr>
+    <td width="90%" valign="top">
+        <div class="outlookcom">
+            <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="90%" style="margin-left:auto; margin-right:auto; margin-top:25px; margin-bottom:15px;" dir="ltr" class="widthfix logo-marg pe-header">
+                <tr>
+                    <td width="45%" bgcolor="#ffffff" style="text-align:left;"><a href="" target="_new"><img src="https://ielanat.co/alpha/images/logo2.png" alt="" style="display:inline-block; max-width:100% !important; width:auto !important; height:auto !important;" border="0"></a></td>
+                    <td width="10%" bgcolor="#ffffff"></td>
+                    <td width="45%" bgcolor="#ffffff" style="text-align: right;"><a href="https://www.payoneer.com" target="_new"><img src="http://pubs.payoneer.com/EmailSender/Payoneer/img/Default/pbp.png" alt="" style="display:inline-block; max-width:100% !important; width:auto !important; height:auto !important;" border="0"></a></td>
+                </tr>
+            </table>
+            <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="90%" style="margin:0 auto;  border-top:1px solid #cccccc; padding-top:25px;" dir="ltr" class="widthfix pe-main-con">
+                <tr>
+                    <td width="100%" valign="top" bgcolor="#ffffff" style="text-align:left;" class="pe-content">
+                        <!-- Bold text (Dear) -->                    
+   <table border="0" cellspacing="0" cellpadding="0" dir="ltr" class="pe-text">
+       <tr>
+           <td><p style="text-align:left; color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; margin:0px;  padding:0; margin-top:10px; font-weight:bold;">Dear '.$name.' ,</p></td>
+       </tr>
+   </table>
+     <!-- Paragraph -->                    
+   <table border="0" cellspacing="0" cellpadding="0" dir="ltr" class="pe-text">
+       <tr>
+           <td><p style="text-align:left; color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; margin:0px;  padding:0; margin-top:10px; font-weight:normal;">Thank you for choosing Ielanat! To confirm your email please click on the link
+           <a href="'.DIR.'activate.php?x='.$id.'&y='.$activasion.'">'.DIR.'activate.php?x='.$id.'&y='.$activasion.'</a> 
+           </p>
+           </td>
+       </tr>
+   </table>
+    <!-- paragraph with link -->                      
+   <table border="0" cellspacing="0" cellpadding="0" dir="ltr" class="pe-text">
+       <tr>
+         <td><p style="text-align:left; color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:22px; margin:0px;  padding:0; margin-top:10px; font-weight:normal;">To learn more about your Ielanat  <font style="color:#ff4800;"><a href="https://ielanat.co/about" target="_new" style="color:#ff4800;">FAQs</a></font> and <font style="color:#ff4800;"><a href="https://ielanat.co/alpha/terms.html" target="_new" style="color:#ff4800;">Terms & Conditions</a></font>. Should you have any questions, please <font style="color:#ff4800;"><a href="https://ielanat.co/alpha/contact.html/" target="_new" style="color:#ff4800;">contact us</a></font>.</p></td>
+       </tr>
+   </table> </td> </tr>
+      <tr><td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" dir="ltr" class="pe-signature">
+                          <tr>
+      <td width="100%" valign="top" bgcolor="#ffffff" style="text-align:left;" class="pe-end-msg">
+
+          <table style="text-align:left;" width="100%" border="0" cellpadding="0" cellspacing="0" dir="ltr" class="pe-signature">
+     <tr>
+         <td>&nbsp;</td>
+     </tr>
+     <tr>
+         <td>&nbsp;</td>
+     </tr>
+     <tr>
+         <td style="text-align:left;" dir="ltr">
+             <span style=" color:#333333; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin:0; padding:0; padding-bottom:10px; font-weight:normal;">
+                  <br> <p>Thank you,<br>Ielanat Team</p>
+             </span>
+         </td>
+     </tr>
+ </table>
+
+ <table style="margin:0 auto; text-align:left;" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="100%" dir="ltr" class="pe-social-icons">
+                             <tr>
+    <td width="100%" bgcolor="#ffffff" style="text-align:left; padding-top:10px;">
+        <div style="display:block; max-width:100% !important; width:100% !important; height:auto !important;padding-top:5px;padding-right:0px;padding-bottom:5px;">
+            <table border="0" cellspacing="0" cellpadding="0" style="margin-bottom:10px; padding-bottom:20px; text-align:left;">
+                <tr>
+        <td class="outlookcomsocial"><div style="text-align:center; margin-left:3px; margin-right:3px;">
+            <a href="https://www.facebook.com/ielanatco-614907285324756" target="_new">
+                <img src="https://www.iconfinder.com/icons/107175/download/png/32" border="0" alt="Facebook" /></a></div></td>
+   <td class="outlookcomsocial">
+       <div style="text-align:center; margin-left:3px; margin-right:3px;"><a href="https://twitter.com/ielanat" target="_new">
+           <img src="https://www.iconfinder.com/icons/107170/download/png/32" border="0" alt="Twitter" /></a></div></td>
+</table>   </div></td></tr></table> </td> </tr> </table> </td> </tr> </table>
+                                   <table border="0" cellspacing="0" cellpadding="25" width="100%" dir="ltr" class="pe-footer">
+    <tr>
+        <td width="100%" bgcolor="#cccccc" class="disc-bg" style="text-align:center;">
+            <p style="color:#999999; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; margin-top:0; margin-bottom:15px; padding:0; font-weight:normal;"> To Know more information please visit us at  <a style="color:#FF4900" href="https://www.ielanat.co/" target="_blank">www.ielanat.co</a></p>
+            <p style="color:#999999; font-family:Arial, Helvetica, sans-serif; font-size:9px; line-height:14px; margin-top:0; margin-bottom:15px; padding:0; font-weight:normal;">
+ © 2016 Ielanat, All Rights Reserved<br></p> </td></tr></table> </div> </td></tr> </table></div> </td></tr> </table>
+   </body>
+   </html> 
+  ';
 
 			$mail = new Mail();
 			$mail->setFrom(SITEEMAIL);
