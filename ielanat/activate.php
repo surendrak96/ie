@@ -23,7 +23,7 @@ if(is_numeric($memberID) && !empty($active)){
 		exit;
 
 	} else {
-		echo "Your account is already activated."; 
+		echo "Your account could not be activated."; 
 	}
 	
 }

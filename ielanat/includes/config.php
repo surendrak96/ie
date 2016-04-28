@@ -12,7 +12,7 @@ define('DBPASS','1234');
 define('DBNAME','ielanat');
 //application address
 define('DIR','http://localhost/ielanat/');
-define('SITEEMAIL','contactus@ielanat.co');
+define('SITEEMAIL','noreply@ielanat.co');
 
 try {
 

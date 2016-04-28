@@ -15,6 +15,7 @@ class User extends Password{
 		try {
 			$stmt = $this->_db->prepare('SELECT password, username, memberID FROM members WHERE username = :username AND active="Yes" ');
 			$stmt->execute(array('username' => $username));
+			
 
 			return $stmt->fetch();
 
@@ -31,7 +32,7 @@ class User extends Password{
 
 		    $_SESSION['loggedin'] = true;
 		    $_SESSION['username'] = $row['username'];
-		    $_SESSION['memberID'] = $row['memberID'];
+		   $_SESSION['memberID'] = $row['memberID'];
 		    return true;
 		}
 	}

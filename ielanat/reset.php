@@ -126,7 +126,7 @@ $title = 'Reset Account';
 			<div class="logo">
 				<a href="index.html"><span>ie</span>lanat</a>
 			</div>
-			<div class="header-right">
+</div>
 
 <div class="container">
 

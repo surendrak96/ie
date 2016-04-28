@@ -7,7 +7,7 @@ if(!$user->is_logged_in()){ header('Location: login.php'); }
 $title = 'Members Page';
 
 //include header template
-require('header.html'); 
+//require('header.html'); 
 ?>
 
 <div class="container">
@@ -18,7 +18,13 @@ require('header.html');
 			
 				<h2>Member only page - Welcome <?php echo $_SESSION['username']; ?></h2>
 				<p><a href='logout.php'>Logout</a></p>
-				<hr>
+  	<hr>
+  	<form action="update.php" method="POST"/>
+  	<input type="text" name="email" value="" />
+  	<input type="password" name="pass" value="" />   
+    <input type="password" name="conpass" value=""  />  
+
+ 	<input type="submit"  value="submit"/>
 
 		</div>
 	</div>
@@ -28,5 +34,5 @@ require('header.html');
 
 <?php 
 //include header template
-require('layout/footer.php'); 
+require('layout/footer.html'); 
 ?>

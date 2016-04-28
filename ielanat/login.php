@@ -1,5 +1,7 @@
 <?php
 //include config
+session_start();
+
 require_once('includes/config.php');
 
 //check if already logged in move to home page
@@ -14,6 +16,8 @@ if(isset($_POST['submit'])){
 	if($user->login($username,$password)){ 
 		$_SESSION['username'] = $username;
 		header('Location: memberpage.php');
+
+		
 		exit;
 	
 	} else {
@@ -83,52 +87,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html"> <img src="images/logo2.png"</a>
+				<a href="index.html">ie<span>lanat</span></a>
 			</div>
 			<div class="header-right">
 			<a class="account" href="login.php">My Account</a>
 		
 <!-- Large modal -->
-			<div class="selectregion">
-				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-				Select Your Region</button>
-					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-					aria-hidden="true">
-						<div class="modal-dialog modal-lg">
-							<div class="modal-content">
-								<div class="modal-header">
-									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-										&times;</button>
-									<h4 class="modal-title" id="myModalLabel">
-										Please Choose Your Location</h4>
-								</div>
-								</div>
-								<div class="modal-body">
-									 <form class="form-horizontal" role="form">
-										<div class="form-group">
-											<select id="basic2" class="show-tick form-control" multiple>
-												<optgroup label="Popular Cities">
-													<option selected style="display:none;color:#eee;">Select City</option>
-													<option>Dubai</option>
-													<option>Abu Dhabi</option>
-													<option>Sharjah</option>
-													<option>Ras Al Khaimah	  </option>
-													<option>Fujairah</option>
-													<option>Ajman</option>
-													<option>Umm Al Quwain</option>
-												</optgroup>
-											</optgroup>
-											</select>
-										</div>
-									  </form>    
-								</div>
-							</div>
-						</div>
-					</div>
-				<script>
-				$('#myModal').modal('');
-				</script>
-			</div>
+		
 		</div>
 		</div>
 	</div>

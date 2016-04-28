@@ -1,0 +1,592 @@
+<?php
+session_start();
+
+$user =$_SESSION['username'];
+echo $user;
+
+
+ ?>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#f1 {
+	display:none;
+	}
+#f2
+{display:none;}
+#f3{display:none;}#f4{display:none;}#f5{display:none;}#f6{display:none;}#f7{display:none;}#f8{
+display:none;}#f9{display:none;}#f10{display:none;}#f11{display:none;}#f12{display:none;}
+</style>
+<script>
+
+</script>
+<script>
+function showform()
+{
+	var selopt=document.getElementById("opts").value;
+
+
+		if(selopt=='Mobiles')
+	{
+		    document.getElementById("f1").style.display="block";
+		    document.getElementById("f2").style.display="none";
+		    document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+
+	}
+	else
+		if(selopt=='Electronics and Appliances'){
+			
+			document.getElementById("f2").style.display="block";
+            document.getElementById("f1").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+		}
+		else
+		if(selopt=='Cars'){
+			
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="block";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Bikes'){
+			
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="block";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Furniture'){
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="block";
+            document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Pets'){
+			
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="block";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Books, Sports and hobbies'){
+			
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="block";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Fashion'){
+			
+		document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="block";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Kids'){
+		document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="block";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Services'){
+			
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="block";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="none";
+			
+			
+			
+		}
+		else
+		if(selopt=='Jobs'){
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="block";
+			document.getElementById("f12").style.display="none";
+			
+			
+		}
+		else
+		if(selopt=='Real, Estate'){
+			
+			document.getElementById("f1").style.display="none";
+            document.getElementById("f2").style.display="none";
+			document.getElementById("f3").style.display="none";
+			document.getElementById("f4").style.display="none";
+			document.getElementById("f5").style.display="none";
+			document.getElementById("f6").style.display="none";
+			document.getElementById("f7").style.display="none";
+			document.getElementById("f8").style.display="none";
+            document.getElementById("f9").style.display="none";
+			document.getElementById("f10").style.display="none";
+			document.getElementById("f11").style.display="none";
+			document.getElementById("f12").style.display="block";
+			
+			
+		}
+}
+ window.onload = function(){
+    document.getElementById('Mobile').selectedIndex = -1;
+  }
+</script>
+
+
+
+<title>Post a Free ad</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-select.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Resale Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<!--fonts-->
+<link href='//fonts.googleapis.com/css?family=Ubuntu+Condensed' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!--//fonts-->	
+<!-- js -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- js -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script>
+  $(document).ready(function () {
+    var mySelect = $('#first-disabled2');
+
+    $('#special').on('click', function () {
+      mySelect.find('option:selected').prop('disabled', true);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#special2').on('click', function () {
+      mySelect.find('option:disabled').prop('disabled', false);
+      mySelect.selectpicker('refresh');
+    });
+
+    $('#basic2').selectpicker({
+      liveSearch: true,
+      maxOptions: 1
+    });
+  });
+</script>
+<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<link href="css/jquery.uls.css" rel="stylesheet"/>
+<link href="css/jquery.uls.grid.css" rel="stylesheet"/>
+<link href="css/jquery.uls.lcd.css" rel="stylesheet"/>
+<!-- Source -->
+<script src="js/jquery.uls.data.js"></script>
+<script src="js/jquery.uls.data.utils.js"></script>
+<script src="js/jquery.uls.lcd.js"></script>
+<script src="js/jquery.uls.languagefilter.js"></script>
+<script src="js/jquery.uls.regionfilter.js"></script>
+<script src="js/jquery.uls.core.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+    <script src="js/easyResponsiveTabs.js"></script>
+</head>
+<body>
+<div class="header">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><span>ie</span>lanat</a>
+			</div>
+			<div class="header-right">
+			<a class="account" href="login.php">My Account</a>
+				<!-- Large modal -->
+			<div class="selectregion">
+				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+				Select Your Region</button>
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+					aria-hidden="true">
+						<div class="modal-dialog modal-lg">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+										&times;</button>
+									<h4 class="modal-title" id="myModalLabel">
+										Please Choose Your Location</h4>
+								</div>
+								<div class="modal-body">
+									 <form class="form-horizontal" role="form">
+										<div class="form-group">
+
+						<select id="basic2" class="show-tick form-control" multiple>
+						<optgroup label="Popular Cities"								
+						<option selected style="display:none;color:#eee;">Select City</option>
+													<option>Birmingham</option>
+													<option>Anchorage</option>
+													<option>Phoenix</option>
+													<option>Little Rock</option>
+													<option>Chicago</option>
+													<option>Indianapolis</option>
+												</optgroup>
+												</select>
+										</div>
+									  </form>    
+								</div>
+							</div>
+						</div>
+					</div>
+				<script>
+				$('#myModal').modal('');
+				</script>
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- Submit Ad -->
+	<div class="submit-ad main-grid-border">
+		<div class="container">
+			<h2 class="head">Post an Ad</h2>
+			<div class="post-ad-form">
+				 <h3 class="head">Post an Ad in just 30 seconds</h3><br>
+
+				<hr>
+				<form  method="POST" action="process_post-ad.php" 
+				 enctype="multipart/form-data" >
+					<label>Select Category <span>*</span></label>
+					<select required="required"  name="cat" onchange="showform()"  id="opts">
+					  <option value="select">Select Category </option>
+					  <option value="Mobiles">Mobiles</option>
+					  <option value="Electronics and Appliances">  Electronics and Appliances</option>
+					  <option value="Cars">Cars</option>
+					  <option value="Bikes">Bikes</option>
+					  <option value="Furniture">Furniture</option>
+					  <option value="Pets">Pets</option>
+					  <option value="Books, Sports and hobbies">Books, Sports and hobbies</option>
+					  <option value="Fashion">Fashion</option>
+					  <option value="Kids">Kids</option>
+					  <option value="Services">Services</option>
+					  <option value="Jobs">Jobs</option>
+					  <option value="Real, Estate">Real, Estate</option>
+					</select>
+					
+				
+					<div  id="f1" >
+					<label>Select Sub Category <span>*</span></label>
+					<select required="required"  name="subcat"  >
+					   <option value="Mobiles">Mobiles</option>
+					  <option value="Tablets">Tablets</option>
+					  <option value="Accessories">Accessories</option>
+				     </select>
+					</div>
+
+					<div  id="f2" >
+					<label>Select Sub Category <span>*</span></label>
+						<select  required="required" name="subcat"  >
+						  <option value="Computers & accessories">Computers & accessories</option>
+					  <option value="Tv - video - audio">Tv - video - audio</option>
+					  <option value="Cameras & accessories">Cameras & accessories</option>
+					    <option value="Games & Entertainment">Games & Entertainment</option>
+					  <option value="Fridge - AC - Washing Machine">Fridge - AC - Washing Machine</option>
+					  <option value="Kitchen & Other Appliances">Kitchen & Other Appliances</option>
+					</select>
+					</div>
+
+					<div  id="f3" >
+					<label>Select Sub Category <span>*</span></label>
+					<select  required="required" name="subcat"  >
+						 	  <option value="Commercial Vehicles">Commercial Vehicles</option>
+					  <option value="Other Vehicles">Other Vehicles</option>
+					  <option value="Spare Parts">Spare Parts</option>
+					   
+					</select>
+					</div>
+
+					<div  id="f4" >
+					<label>Select Sub Category <span>*</span></label>
+					 	 	<select  name="subcat"  >
+							 		  <option value="Motorcycles">Motorcycles</option>
+					  <option value="Scooters">Scooters</option>
+					  <option value="Bicycles">Bicycles</option>
+					  <option value="Spare Parts">Spare Parts</option>
+					   
+					</select>
+					</div>
+
+					<div  id="f5" >
+					<label>Select Sub Category <span>*</span></label>
+					 	  	<select  name="subcat" >	 
+					 				  <option value="Motorcycles">Motorcycles</option>
+						  <option value="Sofa & Dining">Sofa & Dining</option>
+					  <option value="Beds & Wardrobes">Beds & Wardrobes</option>
+					  <option value="Home Decor & Garden">Home Decor & Garden</option>
+					  <option value="Other Household Items">Other Household Items</option>
+					   
+					</select>
+					</div>
+
+					<div  id="f6" >
+					<label>Select Sub Category <span>*</span></label>
+					<select  name="subcat"  >		 
+						 	  <option value="Dogs">Dogs</option>
+					  <option value="Aquariums">Aquariums</option>
+					  <option value="Pet Food & Accessories">Pet Food & Accessories</option>
+					  <option value="Other Pets">Other Pets</option>
+					   
+					</select>
+					</div>
+
+						<div  id="f7" >
+					<label>Select Sub Category <span>*</span></label>
+						<select  name="subcat"  >	
+						 	  <option value="Books & Magazines">Books & Magazines</option>
+					  <option value="Musical Instruments">Musical Instruments</option>
+					  <option value="Gym & Fitness">Gym & Fitness</option>
+					  <option value="Other Hobbies">Other Hobbies</option>
+					   
+					</select>
+					</div>
+
+								<div  id="f8" >
+					<label>Select Sub Category <span>*</span></label>
+						<select  name="subcat"  >	 
+					  <option value="Clothes">Clothes</option>
+					  <option value="Footwear">Footwear</option>
+					  <option value="Accessories">Accessories</option>
+					   
+					</select>
+					</div>
+
+								<div  id="f9" >
+					<label>Select Sub Category <span>*</span></label>
+						<select  name="subcat"  >	
+						   <option value="Furniture And Toys">Furniture And Toys</option>
+					  <option value="Prams & Walkers">Prams & Walkers</option>
+					  <option value="Accessories">Accessories</option>
+					   
+					</select>
+					</div>
+
+									<div  id="f10" >
+					<label>Select Sub Category <span>*</span></label>
+						<select  name="subcat"  >	 
+						 <option value="Education & Classes">Education & Classes</option>
+					  <option value="Web Development">Web Development</option>
+					  <option value="Electronics & Computer Repair">Electronics & Computer Repair</option>
+					  <option value="Maids & Domestic Help">Maids & Domestic Help</option>
+					  <option value="Health & Beauty">Health & Beauty</option>
+					  <option value="Movers & Packers">Movers & Packers</option>
+					  <option value="Drivers & Taxi">Drivers & Taxi</option>
+					  <option value="Event Services">Event Services</option>
+					  <option value="Other Services">Other Services</option>
+					 
+					</select>
+					</div>
+
+									<div  id="f11" >
+					<label>Select Sub Category <span>*</span></label>
+						<select  name="subcat"  >	
+							 		  <option value="Customer Service">Customer Service</option>
+					  <option value="IT">IT</option>
+					  <option value="Online">Online</option>
+					  <option value="Marketing">Marketing</option>
+					  <option value="Advertising & PR">Advertising & PR</option>
+					  <option value="Sales">Sales</option>
+					  <option value="Clerical & Administration">Clerical & Administration</option>
+					  <option value="Human Resources">Human Resources</option>
+					  <option value="Hotels & Tourism">Hotels & Tourism</option>
+					  <option value="Accounting & Finance">Accounting & Finance</option>
+					  <option value="Manufacturing">Manufacturing</option>
+					  <option value="Part - Time">Part - Time</option>
+					 <option value="Other Jobs">Other Jobs</option>
+					 
+					</select>
+					</div>
+				<div  id="f12" >
+
+					<label>Select Sub Category <span>*</span></label>
+						<select  name="subcat"  >  
+					  <option value="Houses">Houses</option>
+					  <option value="Apartments">Apartments</option>
+					  <option value="PG & Roommates">PG & Roommates</option>
+					  <option value="Land & Plots">Land & Plots</option>
+					  <option value="Shops - Offices - Commercial Space">Shops - Offices - Commercial Space</option>
+					  <option value="SpaceVacation Rentals - Guest Houses
+">SpaceVacation Rentals - Guest Houses
+</option>
+					 
+					</select>
+					</div>
+
+
+					 
+					  
+					 <div class="clearfix"></div> 
+					<label>Ad Title <span>*</span></label>
+					<input required="required"  type="text" class="phone" placeholder="" name="title" >
+                  <div class="clearfix"></div> 
+					<label>Price <span>*</span></label>
+					<input type="text" class="price" placeholder=""   value="AED" name="price" >
+
+					 <div class="clearfix"></div> 
+					 <div class="upload-ad-photos">
+				<label>Photos for your ad :</label>	
+					<div class="photos-upload-view">
+					<input type="file" name="file_img"   required="required"  id="file"   /></div> 
+					<div class="clearfix"></div>
+						<script src="js/filedrag.js"></script>
+				</div>
+
+				<div class="clearfix"></div>
+					<label>Ad Description <span>*</span></label>
+					<textarea class="mess" placeholder="Write few lines about your product"   maxlength="700"  name="description" ></textarea>
+
+
+					<h2 class="head">Seller Information</h2>
+					<hr>
+				<div class="personal-details">
+					<div class="clearfix"></div>
+						<label>Mobile No <span>*</span></label>
+						<input type="text" class="phone" placeholder=""  name="mobile">
+						<div class="clearfix"></div>
+						
+						<div class="clearfix"></div>
+						<label>Address <span>*</span></label>
+						<input type="text" class="address" placeholder=""  name="address">
+
+						<div class="clearfix"></div>
+						<label>Your City <span>*</span></label>
+						<input type="text" class="phone" placeholder=""  name="city">
+
+						<div class="clearfix"></div>
+						<label>Your Locality <span>*</span></label>
+						<input type="text" class="phone" placeholder=""  name="locality">
+
+						<div class="clearfix"></div>
+						<p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
+					<input type="submit" value="Post AD" name="submit">					
+					
+					</div> 
+					</form>
+					<div class="clearfix"></div>
+			</div>
+		</div>	
+	</div>
+	<!-- // Submit Ad -->
+	<!--footer section start-->		
+		<?php include ("footer.html");
+?>
+
+        <!--footer section end-->
+</body>
+</html>

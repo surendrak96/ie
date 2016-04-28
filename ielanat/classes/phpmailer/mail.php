@@ -9,7 +9,7 @@ class Mail extends PhpMailer
     public $Mailer   = 'smtp';
     public $SMTPAuth = true;
     public $Username = 'imsurendra99@gmail.com';
-    public $Password = 'chitti1234';
+    public $Password = 'eswar2006';
     public $SMTPSecure = 'tls';
     public $WordWrap = 75;
 
