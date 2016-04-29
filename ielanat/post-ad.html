@@ -1,252 +1,13 @@
-<?php
-session_start();
-
-$user =$_SESSION['username'];
-echo $user;
-
-
- ?>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#f1 {
-	display:none;
-	}
-#f2
-{display:none;}
-#f3{display:none;}#f4{display:none;}#f5{display:none;}#f6{display:none;}#f7{display:none;}#f8{
-display:none;}#f9{display:none;}#f10{display:none;}#f11{display:none;}#f12{display:none;}
-</style>
-<script>
-
-</script>
-<script>
-function showform()
-{
-	var selopt=document.getElementById("opts").value;
-
-
-		if(selopt=='Mobiles')
-	{
-		    document.getElementById("f1").style.display="block";
-		    document.getElementById("f2").style.display="none";
-		    document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-
-	}
-	else
-		if(selopt=='Electronics and Appliances'){
-			
-			document.getElementById("f2").style.display="block";
-            document.getElementById("f1").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-		}
-		else
-		if(selopt=='Cars'){
-			
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="block";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Bikes'){
-			
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="block";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Furniture'){
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="block";
-            document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Pets'){
-			
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="block";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Books, Sports and hobbies'){
-			
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="block";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Fashion'){
-			
-		document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="block";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Kids'){
-		document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="block";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Services'){
-			
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="block";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="none";
-			
-			
-			
-		}
-		else
-		if(selopt=='Jobs'){
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="block";
-			document.getElementById("f12").style.display="none";
-			
-			
-		}
-		else
-		if(selopt=='Real, Estate'){
-			
-			document.getElementById("f1").style.display="none";
-            document.getElementById("f2").style.display="none";
-			document.getElementById("f3").style.display="none";
-			document.getElementById("f4").style.display="none";
-			document.getElementById("f5").style.display="none";
-			document.getElementById("f6").style.display="none";
-			document.getElementById("f7").style.display="none";
-			document.getElementById("f8").style.display="none";
-            document.getElementById("f9").style.display="none";
-			document.getElementById("f10").style.display="none";
-			document.getElementById("f11").style.display="none";
-			document.getElementById("f12").style.display="block";
-			
-			
-		}
-}
- window.onload = function(){
-    document.getElementById('Mobile').selectedIndex = -1;
-  }
-</script>
-
-
-
-<title>Post a Free ad</title>
+<title>Resale a Business Category Flat Bootstrap Responsive Website Template | Post Ad :: w3layouts</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-select.css">
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -298,7 +59,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.uls.languagefilter.js"></script>
 <script src="js/jquery.uls.regionfilter.js"></script>
 <script src="js/jquery.uls.core.js"></script>
-
+<script>
+			$( document ).ready( function() {
+				$( '.uls-trigger' ).uls( {
+					onSelect : function( language ) {
+						var languageName = $.uls.data.getAutonym( language );
+						$( '.uls-trigger' ).text( languageName );
+					},
+					quickList: ['en', 'hi', 'he', 'ml', 'ta', 'fr'] //FIXME
+				} );
+			} );
+		</script>
 		<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
     <script src="js/easyResponsiveTabs.js"></script>
 </head>
@@ -306,11 +77,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html"><span>ie</span>lanat</a>
+				<a href="index.html"><span>Re</span>sale</a>
 			</div>
 			<div class="header-right">
-			<a class="account" href="login.php">My Account</a>
-				<!-- Large modal -->
+			<a class="account" href="login.html">My Account</a>
+			<span class="active uls-trigger">Select language</span>
+	<!-- Large modal -->
 			<div class="selectregion">
 				<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">
 				Select Your Region</button>
@@ -327,18 +99,377 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div class="modal-body">
 									 <form class="form-horizontal" role="form">
 										<div class="form-group">
-
-						<select id="basic2" class="show-tick form-control" multiple>
-						<optgroup label="Popular Cities"								
-						<option selected style="display:none;color:#eee;">Select City</option>
+											<select id="basic2" class="show-tick form-control" multiple>
+												<optgroup label="Popular Cities">
+													<option selected style="display:none;color:#eee;">Select City</option>
 													<option>Birmingham</option>
 													<option>Anchorage</option>
 													<option>Phoenix</option>
 													<option>Little Rock</option>
+													<option>Los Angeles</option>
+													<option>Denver</option>
+													<option>Bridgeport</option>
+													<option>Wilmington</option>
+													<option>Jacksonville</option>
+													<option>Atlanta</option>
+													<option>Honolulu</option>
+													<option>Boise</option>
 													<option>Chicago</option>
 													<option>Indianapolis</option>
 												</optgroup>
-												</select>
+												<optgroup label="More Cities">
+													<optgroup label="Alabama">
+														<option>Birmingham</option>
+														<option>Montgomery</option>
+														<option>Mobile</option>
+														<option>Huntsville</option>
+														<option>Tuscaloosa</option>
+													</optgroup>
+													<optgroup label="Alaska">
+														<option>Anchorage</option>
+														<option>Fairbanks</option>
+														<option>Juneau</option>
+														<option>Sitka</option>
+														<option>Ketchikan</option>
+													</optgroup>
+													<optgroup label="Arizona">
+														<option>Phoenix</option>
+														<option>Tucson</option>
+														<option>Mesa</option>
+														<option>Chandler</option>
+														<option>Glendale</option>
+													</optgroup>
+													<optgroup label="Arkansas">
+														<option>Little Rock</option>
+														<option>Fort Smith</option>
+														<option>Fayetteville</option>
+														<option>Springdale</option>
+														<option>Jonesboro</option>
+													</optgroup>
+													<optgroup label="California">
+														<option>Los Angeles</option>
+														<option>San Diego</option>
+														<option>San Jose</option>
+														<option>San Francisco</option>
+														<option>Fresno</option>
+													</optgroup>
+													<optgroup label="Colorado">
+														<option>Denver</option>
+														<option>Colorado</option>
+														<option>Aurora</option>
+														<option>Fort Collins</option>
+														<option>Lakewood</option>
+													</optgroup>
+													<optgroup label="Connecticut">
+														<option>Bridgeport</option>
+														<option>New Haven</option>
+														<option>Hartford</option>
+														<option>Stamford</option>
+														<option>Waterbury</option>
+													</optgroup>
+													<optgroup label="Delaware">
+														<option>Wilmington</option>
+														<option>Dover</option>
+														<option>Newark</option>
+														<option>Bear</option>
+														<option>Middletown</option>
+													</optgroup>
+													<optgroup label="Florida">
+														<option>Jacksonville</option>
+														<option>Miami</option>
+														<option>Tampa</option>
+														<option>St. Petersburg</option>
+														<option>Orlando</option>
+													</optgroup>
+													<optgroup label="Georgia">
+														<option>Atlanta</option>
+														<option>Augusta</option>
+														<option>Columbus</option>
+														<option>Savannah</option>
+														<option>Athens</option>
+													</optgroup>
+													<optgroup label="Hawaii">
+														<option>Honolulu</option>
+														<option>Pearl City</option>
+														<option>Hilo</option>
+														<option>Kailua</option>
+														<option>Waipahu</option>
+													</optgroup>
+													<optgroup label="Idaho">
+														<option>Boise</option>
+														<option>Nampa</option>
+														<option>Meridian</option>
+														<option>Idaho Falls</option>
+														<option>Pocatello</option>
+													</optgroup>
+													<optgroup label="Illinois">
+														<option>Chicago</option>
+														<option>Aurora</option>
+														<option>Rockford</option>
+														<option>Joliet</option>
+														<option>Naperville</option>
+													</optgroup>
+													<optgroup label="Indiana">
+														<option>Indianapolis</option>
+														<option>Fort Wayne</option>
+														<option>Evansville</option>
+														<option>South Bend</option>
+														<option>Hammond</option>														       
+													</optgroup>
+													<optgroup label="Iowa">
+														<option>Des Moines</option>
+														<option>Cedar Rapids</option>
+														<option>Davenport</option>
+														<option>Sioux City</option>
+														<option>Waterloo</option>       													
+													</optgroup>
+													<optgroup label="Kansas">
+														<option>Wichita</option>
+														<option>Overland Park</option>
+														<option>Kansas City</option>
+														<option>Topeka</option>
+														<option>Olathe  </option>            													
+													</optgroup>
+													<optgroup label="Kentucky">
+														<option>Louisville</option>
+														<option>Lexington</option>
+														<option>Bowling Green</option>
+														<option>Owensboro</option>
+														<option>Covington</option>        														
+													</optgroup>
+													<optgroup label="Louisiana">
+														<option>New Orleans</option>
+														<option>Baton Rouge</option>
+														<option>Shreveport</option>
+														<option>Metairie</option>
+														<option>Lafayette</option>          														
+													</optgroup>
+													<optgroup label="Maine">
+														<option>Portland</option>
+														<option>Lewiston</option>
+														<option>Bangor</option>
+														<option>South Portland</option>
+														<option>Auburn</option>         														
+													</optgroup>
+													<optgroup label="Maryland">
+														<option>Baltimore</option>
+														<option>Frederick</option>
+														<option>Rockville</option>
+														<option>Gaithersburg</option>
+														<option>Bowie</option>         														
+													</optgroup>
+													<optgroup label="Massachusetts">
+														<option>Boston</option>
+														<option>Worcester</option>
+														<option>Springfield</option>
+														<option>Lowell</option>
+														<option>Cambridge</option>  
+													</optgroup>
+													<optgroup label="Michigan">
+														<option>Detroit</option>
+														<option>Grand Rapids</option>
+														<option>Warren</option>
+														<option>Sterling Heights</option>
+														<option>Lansing</option> 
+													</optgroup>
+													<optgroup label="Minnesota">
+														<option>Minneapolis</option>
+														<option>St. Paul</option>
+														<option>Rochester</option>
+														<option>Duluth</option>
+														<option>Bloomington</option>      														
+													</optgroup>
+													<optgroup label="Mississippi">
+														<option>Jackson</option>
+														<option>Gulfport</option>
+														<option>Southaven</option>
+														<option>Hattiesburg</option>
+														<option>Biloxi</option>         														
+													</optgroup>
+													<optgroup label="Missouri">
+														<option>Kansas City</option>
+														<option>St. Louis</option>
+														<option>Springfield</option>
+														<option>Independence</option>
+														<option>Columbia</option>            														
+													</optgroup>
+													<optgroup label="Montana">
+														<option>Billings</option>
+														<option>Missoula</option>
+														<option>Great Falls</option>
+														<option>Bozeman</option>
+														<option>Butte-Silver Bow</option>         														
+													</optgroup>
+													<optgroup label="Nebraska">
+														<option>Omaha</option>
+														<option>Lincoln</option>
+														<option>Bellevue</option>
+														<option>Grand Island</option>
+														<option>Kearney</option>        													
+													</optgroup>
+													<optgroup label="Nevada">
+														<option>Las Vegas</option>
+														<option>Henderson</option>
+														<option>North Las Vegas</option>
+														<option>Reno</option>
+														<option>Sunrise Manor</option>            													
+													</optgroup>
+													<optgroup label="New Hampshire">
+														<option>Manchesters</option>
+														<option>Nashua</option>
+														<option>Concord</option>
+														<option>Dover</option>
+														<option>Rochester</option>              													
+													</optgroup>
+													<optgroup label="New Jersey">
+														<option>Newark</option>
+														<option>Jersey City</option>
+														<option>Paterson</option>
+														<option>Elizabeth</option>
+														<option>Edison</option> 
+													</optgroup>
+													<optgroup label="New Mexico">
+														<option>Albuquerque</option>
+														<option>Las Cruces</option>
+														<option>Rio Rancho</option>
+														<option>Santa Fe</option>
+														<option>Roswell</option>       
+													</optgroup>
+													<optgroup label="New York">
+														<option>New York</option>
+														<option>Buffalo</option>
+														<option>Rochester</option>
+														<option>Yonkers</option>
+														<option>Syracuse</option>        														
+													</optgroup>
+													<optgroup label="North Carolina">
+														<option>Charlotte</option>
+														<option>Raleigh</option>
+														<option>Greensboro</option>
+														<option>Winston-Salem</option>
+														<option>Durham</option>          														
+													</optgroup>
+													<optgroup label="North Dakota">
+														<option>Fargo</option>
+														<option>Bismarck</option>
+														<option>Grand Forks</option>
+														<option>Minot</option>
+														<option>West Fargo</option>
+													</optgroup>
+													<optgroup label="Ohio">
+														<option>Columbus</option>
+														<option>Cleveland</option>
+														<option>Cincinnati</option>
+														<option>Toledo</option>
+														<option>Akron</option>      
+													</optgroup>
+													<optgroup label="Oklahoma">
+														<option>Oklahoma City</option>
+														<option>Tulsa</option>
+														<option>Norman</option>
+														<option>Broken Arrow</option>
+														<option>Lawton</option>        														
+													</optgroup>
+													<optgroup label="Oregon">
+														<option>Portland</option>
+														<option>Eugene</option>
+														<option>Salem</option>
+														<option>Gresham</option>
+														<option>Hillsboro</option>          														
+													</optgroup>
+													<optgroup label="Pennsylvania">
+														<option>Philadelphia</option>
+														<option>Pittsburgh</option>
+														<option>Allentown</option>
+														<option>Erie</option>
+														<option>Reading</option>         														
+													</optgroup>
+													<optgroup label="Rhode Island">
+														<option>Providence</option>
+														<option>Warwick</option>
+														<option>Cranston</option>
+														<option>Pawtucket</option>
+														<option>East Providence</option>   
+													</optgroup>
+													<optgroup label="South Carolina">
+														<option>Columbia</option>
+														<option>Charleston</option>
+														<option>North Charleston</option>
+														<option>Mount Pleasant</option>
+														<option>Rock Hill</option> 
+													</optgroup>
+													<optgroup label="South Dakota">
+														<option>Sioux Falls</option>
+														<option>Rapid City</option>
+														<option>Aberdeen</option>
+														<option>Brookings</option>
+														<option>Watertown</option> 
+													</optgroup>
+													<optgroup label="Tennessee">
+														<option>Memphis</option>
+														<option>Nashville</option>
+														<option>Knoxville</option>
+														<option>Chattanooga</option>
+														<option>Clarksville</option>       
+													</optgroup>
+													<optgroup label="Texas">
+														<option>Houston</option>
+														<option>San Antonio</option>
+														<option>Dallas</option>
+														<option>Austin</option>
+														<option>Fort Worth</option>   
+													</optgroup>
+													<optgroup label="Utah">
+														<option>Salt Lake City</option>
+														<option>West Valley City</option>
+														<option>Provo</option>
+														<option>West Jordan</option>
+														<option>Orem</option>   
+													</optgroup>	
+													<optgroup label="Vermont">
+														<option>Burlington</option>
+														<option>Essex</option>
+														<option>South Burlington</option>
+														<option>Colchester</option>
+														<option>Rutland</option>   
+													</optgroup>
+													<optgroup label="Virginia">
+														<option>Virginia Beach</option>
+														<option>Norfolk</option>
+														<option>Chesapeake</option>
+														<option>Arlington</option>
+														<option>Richmond</option> 
+													</optgroup>	
+													<optgroup label="Washington">
+														<option>Seattle</option>
+														<option>Spokane</option>
+														<option>Tacoma</option>
+														<option>Vancouver</option>
+														<option>Bellevue</option> 
+													</optgroup>	
+													<optgroup label="West Virginia">
+														<option>Charleston</option>
+														<option>Huntington</option>
+														<option>Parkersburg</option>
+														<option>Morgantown</option>
+														<option>Wheeling</option> 
+													</optgroup>	
+													<optgroup label="Wisconsin">
+														<option>Milwaukee</option>
+														<option>Madison</option>
+														<option>Green Bay</option>
+														<option>Kenosha</option>
+														<option>Racine</option>
+													</optgroup>
+													<optgroup label="Wyoming">
+														<option>Cheyenne</option>
+														<option>Casper</option>
+														<option>Laramie</option>
+														<option>Gillette</option>
+														<option>Rock Springs</option>
+													</optgroup>			
+												</optgroup>
+											</select>
 										</div>
 									  </form>    
 								</div>
@@ -352,241 +483,162 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
 		</div>
 	</div>
-	
+	<div class="banner text-center">
+	  <div class="container">    
+			<h1>Sell or Advertise   <span class="segment-heading">    anything online </span> with Resale</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+			<a href="post-ad.html">Post Free Ad</a>
+	  </div>
+	</div>
 	<!-- Submit Ad -->
 	<div class="submit-ad main-grid-border">
 		<div class="container">
 			<h2 class="head">Post an Ad</h2>
 			<div class="post-ad-form">
-				 <h3 class="head">Post an Ad in just 30 seconds</h3><br>
-
-				<hr>
-				<form  method="POST" action="process_post-ad.php" 
-				 enctype="multipart/form-data" >
+				<form>
 					<label>Select Category <span>*</span></label>
-					<select required="required"  name="cat" onchange="showform()"  id="opts">
-					  <option value="select">Select Category </option>
-					  <option value="Mobiles">Mobiles</option>
-					  <option value="Electronics and Appliances">  Electronics and Appliances</option>
-					  <option value="Cars">Cars</option>
-					  <option value="Bikes">Bikes</option>
-					  <option value="Furniture">Furniture</option>
-					  <option value="Pets">Pets</option>
-					  <option value="Books, Sports and hobbies">Books, Sports and hobbies</option>
-					  <option value="Fashion">Fashion</option>
-					  <option value="Kids">Kids</option>
-					  <option value="Services">Services</option>
-					  <option value="Jobs">Jobs</option>
-					  <option value="Real, Estate">Real, Estate</option>
+					<select class="">
+					  <option>Select Category</option>
+					  <option>Mobiles</option>
+					  <option>Electronics and Appliances</option>
+					  <option>Cars</option>
+					  <option>Bikes</option>
+					  <option>Furniture</option>
+					  <option>Pets</option>
+					  <option>Books, Sports and hobbies</option>
+					  <option>Fashion</option>
+					  <option>Kids</option>
+					  <option>Services</option>
+					  <option>Real, Estate</option>
 					</select>
-					
-				
-					<div  id="f1" >
-					<label>Select Sub Category <span>*</span></label>
-					<select required="required"  name="subcat"  >
-					   <option value="Mobiles">Mobiles</option>
-					  <option value="Tablets">Tablets</option>
-					  <option value="Accessories">Accessories</option>
-				     </select>
-					</div>
-
-					<div  id="f2" >
-					<label>Select Sub Category <span>*</span></label>
-						<select  required="required" name="subcat"  >
-						  <option value="Computers & accessories">Computers & accessories</option>
-					  <option value="Tv - video - audio">Tv - video - audio</option>
-					  <option value="Cameras & accessories">Cameras & accessories</option>
-					    <option value="Games & Entertainment">Games & Entertainment</option>
-					  <option value="Fridge - AC - Washing Machine">Fridge - AC - Washing Machine</option>
-					  <option value="Kitchen & Other Appliances">Kitchen & Other Appliances</option>
-					</select>
-					</div>
-
-					<div  id="f3" >
-					<label>Select Sub Category <span>*</span></label>
-					<select  required="required" name="subcat"  >
-						 	  <option value="Commercial Vehicles">Commercial Vehicles</option>
-					  <option value="Other Vehicles">Other Vehicles</option>
-					  <option value="Spare Parts">Spare Parts</option>
-					   
-					</select>
-					</div>
-
-					<div  id="f4" >
-					<label>Select Sub Category <span>*</span></label>
-					 	 	<select  name="subcat"  >
-							 		  <option value="Motorcycles">Motorcycles</option>
-					  <option value="Scooters">Scooters</option>
-					  <option value="Bicycles">Bicycles</option>
-					  <option value="Spare Parts">Spare Parts</option>
-					   
-					</select>
-					</div>
-
-					<div  id="f5" >
-					<label>Select Sub Category <span>*</span></label>
-					 	  	<select  name="subcat" >	 
-					 				  <option value="Motorcycles">Motorcycles</option>
-						  <option value="Sofa & Dining">Sofa & Dining</option>
-					  <option value="Beds & Wardrobes">Beds & Wardrobes</option>
-					  <option value="Home Decor & Garden">Home Decor & Garden</option>
-					  <option value="Other Household Items">Other Household Items</option>
-					   
-					</select>
-					</div>
-
-					<div  id="f6" >
-					<label>Select Sub Category <span>*</span></label>
-					<select  name="subcat"  >		 
-						 	  <option value="Dogs">Dogs</option>
-					  <option value="Aquariums">Aquariums</option>
-					  <option value="Pet Food & Accessories">Pet Food & Accessories</option>
-					  <option value="Other Pets">Other Pets</option>
-					   
-					</select>
-					</div>
-
-						<div  id="f7" >
-					<label>Select Sub Category <span>*</span></label>
-						<select  name="subcat"  >	
-						 	  <option value="Books & Magazines">Books & Magazines</option>
-					  <option value="Musical Instruments">Musical Instruments</option>
-					  <option value="Gym & Fitness">Gym & Fitness</option>
-					  <option value="Other Hobbies">Other Hobbies</option>
-					   
-					</select>
-					</div>
-
-								<div  id="f8" >
-					<label>Select Sub Category <span>*</span></label>
-						<select  name="subcat"  >	 
-					  <option value="Clothes">Clothes</option>
-					  <option value="Footwear">Footwear</option>
-					  <option value="Accessories">Accessories</option>
-					   
-					</select>
-					</div>
-
-								<div  id="f9" >
-					<label>Select Sub Category <span>*</span></label>
-						<select  name="subcat"  >	
-						   <option value="Furniture And Toys">Furniture And Toys</option>
-					  <option value="Prams & Walkers">Prams & Walkers</option>
-					  <option value="Accessories">Accessories</option>
-					   
-					</select>
-					</div>
-
-									<div  id="f10" >
-					<label>Select Sub Category <span>*</span></label>
-						<select  name="subcat"  >	 
-						 <option value="Education & Classes">Education & Classes</option>
-					  <option value="Web Development">Web Development</option>
-					  <option value="Electronics & Computer Repair">Electronics & Computer Repair</option>
-					  <option value="Maids & Domestic Help">Maids & Domestic Help</option>
-					  <option value="Health & Beauty">Health & Beauty</option>
-					  <option value="Movers & Packers">Movers & Packers</option>
-					  <option value="Drivers & Taxi">Drivers & Taxi</option>
-					  <option value="Event Services">Event Services</option>
-					  <option value="Other Services">Other Services</option>
-					 
-					</select>
-					</div>
-
-									<div  id="f11" >
-					<label>Select Sub Category <span>*</span></label>
-						<select  name="subcat"  >	
-							 		  <option value="Customer Service">Customer Service</option>
-					  <option value="IT">IT</option>
-					  <option value="Online">Online</option>
-					  <option value="Marketing">Marketing</option>
-					  <option value="Advertising & PR">Advertising & PR</option>
-					  <option value="Sales">Sales</option>
-					  <option value="Clerical & Administration">Clerical & Administration</option>
-					  <option value="Human Resources">Human Resources</option>
-					  <option value="Hotels & Tourism">Hotels & Tourism</option>
-					  <option value="Accounting & Finance">Accounting & Finance</option>
-					  <option value="Manufacturing">Manufacturing</option>
-					  <option value="Part - Time">Part - Time</option>
-					 <option value="Other Jobs">Other Jobs</option>
-					 
-					</select>
-					</div>
-				<div  id="f12" >
-
-					<label>Select Sub Category <span>*</span></label>
-						<select  name="subcat"  >  
-					  <option value="Houses">Houses</option>
-					  <option value="Apartments">Apartments</option>
-					  <option value="PG & Roommates">PG & Roommates</option>
-					  <option value="Land & Plots">Land & Plots</option>
-					  <option value="Shops - Offices - Commercial Space">Shops - Offices - Commercial Space</option>
-					  <option value="SpaceVacation Rentals - Guest Houses
-">SpaceVacation Rentals - Guest Houses
-</option>
-					 
-					</select>
-					</div>
-
-
-					 
-					  
-					 <div class="clearfix"></div> 
+					<div class="clearfix"></div>
 					<label>Ad Title <span>*</span></label>
-					<input required="required"  type="text" class="phone" placeholder="" name="title" >
-                  <div class="clearfix"></div> 
-					<label>Price <span>*</span></label>
-					<input type="text" class="price" placeholder=""   value="AED" name="price" >
-
-					 <div class="clearfix"></div> 
-					 <div class="upload-ad-photos">
+					<input type="text" class="phone" placeholder="">
+					<div class="clearfix"></div>
+					<label>Ad Description <span>*</span></label>
+					<textarea class="mess" placeholder="Write few lines about your product"></textarea>
+					<div class="clearfix"></div>
+				<div class="upload-ad-photos">
 				<label>Photos for your ad :</label>	
 					<div class="photos-upload-view">
-					<input type="file" name="file_img"   required="required"  id="file"   /></div> 
+						<form id="upload" action="index.html" method="POST" enctype="multipart/form-data">
+
+						<input type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000" />
+
+						<div>
+							<input type="file" id="fileselect" name="fileselect[]" multiple="multiple" />
+							<div id="filedrag">or drop files here</div>
+						</div>
+
+						<div id="submitbutton">
+							<button type="submit">Upload Files</button>
+						</div>
+
+						</form>
+
+						<div id="messages">
+						<p>Status Messages</p>
+						</div>
+						</div>
 					<div class="clearfix"></div>
 						<script src="js/filedrag.js"></script>
 				</div>
-
-				<div class="clearfix"></div>
-					<label>Ad Description <span>*</span></label>
-					<textarea class="mess" placeholder="Write few lines about your product"   maxlength="700"  name="description" ></textarea>
-
-
-					<h2 class="head">Seller Information</h2>
-					<hr>
-				<div class="personal-details">
-					<div class="clearfix"></div>
-						<label>Mobile No <span>*</span></label>
-						<input type="text" class="phone" placeholder=""  name="mobile">
+					<div class="personal-details">
+					<form>
+						<label>Your Name <span>*</span></label>
+						<input type="text" class="name" placeholder="">
 						<div class="clearfix"></div>
-						
+						<label>Your Mobile No <span>*</span></label>
+						<input type="text" class="phone" placeholder="">
 						<div class="clearfix"></div>
-						<label>Address <span>*</span></label>
-						<input type="text" class="address" placeholder=""  name="address">
-
-						<div class="clearfix"></div>
-						<label>Your City <span>*</span></label>
-						<input type="text" class="phone" placeholder=""  name="city">
-
-						<div class="clearfix"></div>
-						<label>Your Locality <span>*</span></label>
-						<input type="text" class="phone" placeholder=""  name="locality">
-
+						<label>Your Email Address<span>*</span></label>
+						<input type="text" class="email" placeholder="">
 						<div class="clearfix"></div>
 						<p class="post-terms">By clicking <strong>post Button</strong> you accept our <a href="terms.html" target="_blank">Terms of Use </a> and <a href="privacy.html" target="_blank">Privacy Policy</a></p>
-					<input type="submit" value="Post AD" name="submit">					
-					
-					</div> 
-					</form>
+					<input type="submit" value="Post">					
 					<div class="clearfix"></div>
+					</form>
+					</div>
 			</div>
 		</div>	
 	</div>
 	<!-- // Submit Ad -->
 	<!--footer section start-->		
-		<?php include ("footer.html");
-?>
-
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="foo-grids">
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Who We Are</h4>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+							<p>The point of using Lorem Ipsum is that it has a more-or-less normal letters, as opposed to using 'Content here.</p>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Help</h4>
+							<ul>
+								<li><a href="howitworks.html">How it Works</a></li>						
+								<li><a href="sitemap.html">Sitemap</a></li>
+								<li><a href="faq.html">Faq</a></li>
+								<li><a href="feedback.html">Feedback</a></li>
+								<li><a href="contact.html">Contact</a></li>
+								<li><a href="typography.html">Shortcodes</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Information</h4>
+							<ul>
+								<li><a href="regions.html">Locations Map</a></li>	
+								<li><a href="terms.html">Terms of Use</a></li>
+								<li><a href="popular-search.html">Popular searches</a></li>	
+								<li><a href="privacy.html">Privacy Policy</a></li>	
+							</ul>
+						</div>
+						<div class="col-md-3 footer-grid">
+							<h4 class="footer-head">Contact Us</h4>
+							<span class="hq">Our headquarters</span>
+							<address>
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-map-marker"></span></li>
+									<li>CENTER FOR FINANCIAL ASSISTANCE TO DEPOSED NIGERIAN ROYALTY</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-earphone"></span></li>
+									<li>+0 561 111 235</li>
+									<div class="clearfix"></div>
+								</ul>	
+								<ul class="location">
+									<li><span class="glyphicon glyphicon-envelope"></span></li>
+									<li><a href="mailto:info@example.com">mail@example.com</a></li>
+									<div class="clearfix"></div>
+								</ul>						
+							</address>
+						</div>
+						<div class="clearfix"></div>
+					</div>						
+				</div>	
+			</div>	
+			<div class="footer-bottom text-center">
+			<div class="container">
+				<div class="footer-logo">
+					<a href="index.html"><span>Re</span>sale</a>
+				</div>
+				<div class="footer-social-icons">
+					<ul>
+						<li><a class="facebook" href="#"><span>Facebook</span></a></li>
+						<li><a class="twitter" href="#"><span>Twitter</span></a></li>
+						<li><a class="flickr" href="#"><span>Flickr</span></a></li>
+						<li><a class="googleplus" href="#"><span>Google+</span></a></li>
+						<li><a class="dribbble" href="#"><span>Dribbble</span></a></li>
+					</ul>
+				</div>
+				<div class="copyrights">
+					<p> © 2016 Resale. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		</footer>
         <!--footer section end-->
 </body>
 </html>
